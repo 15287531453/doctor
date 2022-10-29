@@ -5,3 +5,6 @@
 
 ### images
 项目所需要的图片
+
+### js
+Javascript脚本文件
