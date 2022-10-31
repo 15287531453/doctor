@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-top: 30px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin-top: 40px;
+        }
+        span{
+            border: 1px solid #000;
+        }
+       .span1{
+            margin-right: 30px;
+        }
+       body{
+           margin: 0;
+       }
+       section{
+           width: 600px;
+           height: 200px;
+           background-color: red;
+           /* 盒子水平居中的方法*/
+           margin: 0 auto;
+           /* 文字居中*/
+           text-align: center;
+           /* 行高等于盒子高，让文字垂直居中*/
+           line-height: 100px;
+       }
+    </style>
+</head>
+<body>
+    <span class="span1">
+       我是一个span
+    </span>
+    <span class="spec2">我是一个span</span>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <ul>
+        <li>列表项</li>
+        <li>列表项</li>
+        <li>列表项</li>
+        <li>列表项</li>
+    </ul>
+        <!-- ul的儿子只能是li  -->
+        <p>段落</p>
+        <p>段落</p>
+        <p>段落</p>
+
+        <section>
+            哈哈哈，笑死
+        </section>
+
+</body>
+</html>
