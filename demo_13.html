@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .clearfix::after {
+        content:'';
+        display:block;
+        /*转为块级元素*/
+    }
+    div {
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    p {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        margin-right: 20px;
+    }
+    .c1{
+        clear: both;
+    }
+    .h20{
+        height: 20px;
+    }
+    .h22{
+        height: 22px;
+    }
+    </style>
+</head>
+<body>
+  <div class="c1 h20"></div>
+    <p></p>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+    <p></p>
+  </div>
+</body>
+</html>
