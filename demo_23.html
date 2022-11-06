@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box p {
+            border: 1px solid #000000;
+        }
+        .box p {
+            width: 60px;
+            height: 60px;
+            background-color: orange;
+            margin-bottom: 10px;
+            position: relative;
+            left: 0;
+            transition: left 5s linear 0s;
+        }
+        .box p:nth-child(2){
+            transition_timing_function:ease-in;
+        }
+        .box p:nth-child(3){
+            transition_timing_function:ease-out;
+        }
+        .box p:nth-child(4){
+            transition_timing_function:ease-in-out;
+        }
+        .box p:nth-child(6){
+            transition_timing_function:cubic-bezier(.29,-0,98,.5,1.76);
+        }
+        .box:hover p {
+           left: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <P></P>
+        <P></P>
+        <P></P>
+        <P></P>
+        <P></P>
+        <P></P>
+    </div>
+</body>
+</html>
