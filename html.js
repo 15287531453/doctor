@@ -1,1 +1,1 @@
- alert("您好，javascript");
+console.log("hello")
