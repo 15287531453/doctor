@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      //要让用户输入一个年份
+      var year = Number(prompt('请输入一个年份'));
+
+      //根据两个条件进行判断：
+      // 能被4整除，不能被100整除
+      //能被100整除，不能被400整除
+
+      alert(year % 4 == 0 && year % 100 !=0 || year % 100 == 0 && year % 400 == 0);
+    </script>
+</body>
+</html>
