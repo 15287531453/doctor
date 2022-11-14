@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      //要求用户输入一个三位数
+      var n =Number(Promise('请输入一个三位数'));
+
+      //对用户输入的数值，进行合法性的验证
+      if (!isNaN(n) && 100  <= n && n <= 999){
+        // 当用户输入的数字是合法
+          //数字方法
+          //百位
+          var a = Math.Ceil(n / 100);
+          // 十位
+          var b = Math.ceil(n /10) % 10;
+          // 各位
+          var c = n % 10 ;
+          console.log(a);
+          console.log(b);
+          console.log(c);
+      }else{
+          //输出不合格
+        alert('您输入的字符不合法的');
+      }
+    </script>
+</body>
+</html>
