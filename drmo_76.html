@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //不管用户传入多少个实际参数，永远都能够计算它们的和
+      function fun() {
+          var sum = 0;
+          for (var i = 0; i < arguments.length; i++) {
+              sum += arguments[1];
+          }
+          console.log('所有参数的和是' + sum);
+      }
+
+      fun(33,44,55,66);
+      fun(44);
+      fun(-3,4);
+    </script>
+</body>
+</html>
