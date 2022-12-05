@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      // 计算一个函数的阶乘
+      function factorial(n) {
+        //累成器
+          var result = 1;
+          for (var i = 1;i <=n ;i++){
+              result *= i;
+          }
+          return result;
+      }
+      //穷举法，从100到999寻找喇叭花数
+      for (var i = 100;i <= 999;i++){
+          var i_str = i.toString();
+          //abc分别表示百位、十位、各位
+          var a = i_str(i_str[0]);
+          var a = i_str(i_str[1]);
+          var a = i_str(i_str[2]);
+
+         //根据喇叭花数据的条件，来判断
+          if (factorial(a) + factorial(b) + factorial(c) == i) {
+              console.log(i);
+          }
+      }
+    </script>
+</body>
+</html>
