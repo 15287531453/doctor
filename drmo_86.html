@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      var obj1 = {
+            a :1,
+            b :2,
+            c :[44,55,66]
+      };
+
+      var obj2 = {};
+
+      for (var k in obj1){
+          //每遍历一个k属性，就给obj2也添加一个同名的k属性
+          //每遍历obj1的k属性值相同
+          obj2[k] = obj1[k];
+      }
+
+    </script>
+</body>
+</html>
